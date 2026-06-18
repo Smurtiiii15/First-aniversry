@@ -957,11 +957,5 @@ function checkPassword() {
 
         document.getElementById("passwordInput").value = "";
     }
-}
-}
-function checkPassword() {
-    if(document.getElementById("passwordInput").value === "1215"){
-        document.getElementById("password-screen").style.display = "none";
-        document.getElementById("main-content").style.display = "block";
-    }
-}
+};
+
