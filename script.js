@@ -935,3 +935,26 @@ console.log(
     "%cMade with love.",
     "font-size:18px;color:#ff7ab8;"
 );
+/* =========================================
+password 
+========================================== */
+
+function checkPassword() {
+
+    const correctPassword = "1215";
+    const enteredPassword =
+        document.getElementById("passwordInput").value;
+
+    if (enteredPassword === correctPassword) {
+
+        document.getElementById("password-screen").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+
+    } else {
+
+        document.getElementById("error-message").innerText =
+            "Wrong Password ❤️";
+
+        document.getElementById("passwordInput").value = "";
+    }
+}
